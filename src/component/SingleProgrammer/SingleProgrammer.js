@@ -8,8 +8,8 @@ const SingleProgrammer = (props) => {
     return (
         <div className='card-info'>
             <img src={picture} alt="alternative" />
-            <h3>Name:  {name}</h3>
-            <h5>Time{time}</h5>
+            <h3>{name}</h3>
+            <h5>Time: {time}</h5>
             <button>Add to Cart</button>
         </div>
 
