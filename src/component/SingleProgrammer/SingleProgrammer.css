@@ -16,3 +16,13 @@
     width: 260px;
     height: 275px;
 }
+
+.card-btn {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
