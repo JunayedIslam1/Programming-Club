@@ -24,3 +24,43 @@
     border-radius: 30px;
     box-shadow: 5px 5px 12px gainsboro;
 }
+
+
+.break-btn-all {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(138, 135, 145);
+    padding: 20px;
+    border-radius: 10px;
+    /* margin: 5px; */
+
+}
+
+.btn-single {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    /* margin: 5px; */
+    box-shadow: 3px 3px 8px gray;
+    background-color: azure;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.learning-duration {
+    background-color: rgb(138, 135, 145);
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+.break-time {
+    background-color: rgb(138, 135, 145);
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+}

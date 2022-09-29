@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLocationArrow } from "react-icons/fa";
 import './Cart.css';
 
-const Cart = () => {
+const Cart = (props) => {
+
+    const { cart } = props;
+
+    let total = 0;
+    for (const program of cart) {
+        total = total + parseFloat(program.time);
+    }
+
+
     return (
         <div>
             <div className='main-body'>
@@ -28,7 +37,19 @@ const Cart = () => {
                     <p>Age</p>
                 </div>
             </div>
-        </div>
+            <h3 style={{ marginTop: '40px' }}>Add a Break</h3>
+            <div className='break-btn-all'>
+                <button className='btn-single'>20s</button>
+                <button className='btn-single'>30s</button>
+                <button className='btn-single'>45s</button>
+                <button className='btn-single'>55s</button>
+            </div>
+            <h3 style={{ marginTop: '40px' }}>Learning Details:</h3>
+            <div className='input-section'>
+                <h3 className='learning-duration'>Learning Duration: {total}mins </h3>
+                <h3 className='break-time'>Break Time: </h3>
+            </div>
+        </div >
 
     );
 };

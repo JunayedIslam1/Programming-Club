@@ -7,12 +7,21 @@ import './Programmer.css';
 const Programmer = () => {
 
     const [programmer, setProgrammer] = useState([]);
+    const [cart, setCart] = useState([]);
+
+
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setProgrammer(data));
     }, []);
+
+    const handleAddToCart = (programmer) => {
+        // console.log(programmer);
+        const newCart = [...cart, programmer];
+        setCart(newCart);
+    }
 
     return (
         <div>
@@ -24,12 +33,12 @@ const Programmer = () => {
                     {
                         programmer.map(programmer => <SingleProgrammer
                             key={programmer.id}
-                            programmer={programmer}
+                            programmer={programmer} handleAddToCart={handleAddToCart}
                         ></SingleProgrammer>)
                     }
                 </div>
                 <div className='cart-body'>
-                    <Cart></Cart>
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
         </div >

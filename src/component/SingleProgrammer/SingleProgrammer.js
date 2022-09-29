@@ -1,17 +1,21 @@
 import React from 'react';
 import './SingleProgrammer.css'
 
-const SingleProgrammer = (props) => {
+const SingleProgrammer = ({ programmer, handleAddToCart }) => {
 
-    const { id, name, time, picture } = props.programmer;
+    // const { programmer, handleAddToCart } = props;
+
+    const { id, name, time, picture } = programmer;
+
+
 
     return (
 
         <div className='card-info'>
             <img src={picture} alt="alternative" />
             <h3>{name}</h3>
-            <h5>Time: {time}</h5>
-            <button className='card-btn'>Add to Cart</button>
+            <h5>Duration: {time}mins</h5>
+            <button onClick={() => handleAddToCart(programmer)} className='card-btn'>Add to Cart</button>
         </div>
 
     );
