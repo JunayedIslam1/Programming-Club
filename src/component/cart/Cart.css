@@ -64,3 +64,14 @@
     border-radius: 20px;
     color: whitesmoke;
 }
+
+.last-btn {
+    background-color: blue;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+}

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { FaLocationArrow } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css';
 
 const Cart = (props) => {
+
 
     const { cart } = props;
 
@@ -13,16 +16,17 @@ const Cart = (props) => {
 
 
 
-
-
     const [value, setValue] = useState(0);
     const getCount = () => setValue(20);
     const getCount2 = () => setValue(30);
     const getCount3 = () => setValue(45);
     const getCount4 = () => setValue(55);
 
-
-
+    const lastBtn = () => {
+        toast('Congratulations!', {
+            position: "top-center"
+        });
+    }
     return (
         <div>
             <div className='main-body'>
@@ -58,8 +62,13 @@ const Cart = (props) => {
             <h3 style={{ marginTop: '40px' }}>Learning Details:</h3>
             <div className='input-section'>
                 <h3 className='learning-duration'>Learning Duration: {total}mins </h3>
-                <h3 className='break-time'>Break Time:{value} </h3>
+                <h3 className='break-time'>Break Time: {value}s </h3>
             </div>
+
+            <button onClick={lastBtn} className='last-btn'>Learning Complete</button>
+
+
+            <ToastContainer></ToastContainer>
         </div >
 
     );
