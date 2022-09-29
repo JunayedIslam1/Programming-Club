@@ -13,8 +13,8 @@ const SingleProgrammer = ({ programmer, handleAddToCart }) => {
 
         <div className='card-info'>
             <img src={picture} alt="alternative" />
-            <h3>{name}</h3>
-            <h5>Duration: {time}mins</h5>
+            <h4>{name}</h4>
+            <h6>Duration: {time}mins</h6>
             <button onClick={() => handleAddToCart(programmer)} className='card-btn'>Add to Cart</button>
         </div>
 
