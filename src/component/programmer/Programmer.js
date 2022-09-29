@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../cart/Cart';
+import QA from '../QA/QA';
 import SingleProgrammer from '../SingleProgrammer/SingleProgrammer';
 import './Programmer.css';
 
@@ -41,6 +42,7 @@ const Programmer = () => {
                     <Cart cart={cart}></Cart>
                 </div>
             </div>
+            <QA></QA>
         </div >
     );
 };

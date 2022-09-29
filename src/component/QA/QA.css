@@ -1,0 +1,11 @@
+.accordion {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.accodion-header {
+    background-color: grey;
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+}
