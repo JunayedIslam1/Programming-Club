@@ -12,6 +12,17 @@ const Cart = (props) => {
     }
 
 
+
+
+
+    const [value, setValue] = useState(0);
+    const getCount = () => setValue(20);
+    const getCount2 = () => setValue(30);
+    const getCount3 = () => setValue(45);
+    const getCount4 = () => setValue(55);
+
+
+
     return (
         <div>
             <div className='main-body'>
@@ -39,15 +50,15 @@ const Cart = (props) => {
             </div>
             <h3 style={{ marginTop: '40px' }}>Add a Break</h3>
             <div className='break-btn-all'>
-                <button className='btn-single'>20s</button>
-                <button className='btn-single'>30s</button>
-                <button className='btn-single'>45s</button>
-                <button className='btn-single'>55s</button>
+                <button onClick={() => getCount(value)} className='btn-single'>20s</button>
+                <button onClick={() => getCount2(value)} className='btn-single'>30s</button>
+                <button onClick={() => getCount3(value)} className='btn-single'>45s</button>
+                <button onClick={() => getCount4(value)} className='btn-single'>55s</button>
             </div>
             <h3 style={{ marginTop: '40px' }}>Learning Details:</h3>
             <div className='input-section'>
                 <h3 className='learning-duration'>Learning Duration: {total}mins </h3>
-                <h3 className='break-time'>Break Time: </h3>
+                <h3 className='break-time'>Break Time:{value} </h3>
             </div>
         </div >
 
