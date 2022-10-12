@@ -6,7 +6,7 @@ const Nav = () => {
     return (
         <div className='navbar'>
 
-            <h2 className='nav-text'> <FaCube className='icon'></FaCube>Dream Programming Club</h2>
+            <h2 className='nav-text'>Study Club</h2>
 
         </div>
     );

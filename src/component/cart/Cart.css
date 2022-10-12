@@ -29,9 +29,9 @@
 .break-btn-all {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(138, 135, 145);
+    background-color: rgb(186, 165, 235);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     /* margin: 5px; */
 
 }

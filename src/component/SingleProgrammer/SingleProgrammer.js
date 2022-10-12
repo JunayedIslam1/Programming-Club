@@ -14,8 +14,8 @@ const SingleProgrammer = ({ programmer, handleAddToCart }) => {
         <div className='card-info'>
             <img src={picture} alt="alternative" />
             <h4>{name}</h4>
-            <h6>Duration: {time}mins</h6>
-            <button onClick={() => handleAddToCart(programmer)} className='card-btn'>Add to Cart</button>
+            <h6>Time: {time}mins</h6>
+            <button onClick={() => handleAddToCart(programmer)} className='card-btn'>Add to List</button>
         </div>
 
     );

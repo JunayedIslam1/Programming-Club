@@ -26,7 +26,6 @@ const Programmer = () => {
 
     return (
         <div>
-            <h3 className='task-sentence'>Select Your Task:</h3>
             <div className='home-part'>
 
                 <div className='card-section'>

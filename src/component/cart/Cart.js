@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { FaLocationArrow } from "react-icons/fa";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css';
 
 const Cart = (props) => {
@@ -16,29 +14,22 @@ const Cart = (props) => {
 
     const [value, setValue] = useState(0);
     const getCount = () => {
-        setValue(20);
+        setValue(10);
     };
-    const getCount2 = () => setValue(30);
-    const getCount3 = () => setValue(45);
+    const getCount2 = () => setValue(15);
+    const getCount3 = () => setValue(30);
     const getCount4 = () => setValue(55);
 
 
 
 
 
-    const lastBtn = () => {
-        toast('Congratulations!', {
-            position: "top-center"
-        });
-    }
     return (
         <div>
             <div className='main-body'>
-                <div className='cart-img'>
-                    <img src="https://t4.ftcdn.net/jpg/03/22/27/15/360_F_322271599_m6B4XfH1Y2k72n5Kk34Q1KfX7oz3GlQs.jpg" alt="" />
-                </div>
+
                 <div className='main-text'>
-                    <h4>Junayed Islam</h4>
+                    <h4>Akram Khan</h4>
                     <p><FaLocationArrow></FaLocationArrow> Dhaka, Bangladesh</p>
                 </div>
             </div>
@@ -58,9 +49,9 @@ const Cart = (props) => {
             </div>
             <h4 style={{ marginTop: '40px' }}>Add a Break</h4>
             <div className='break-btn-all'>
-                <button onClick={() => getCount(value)} className='btn-single'>20s</button>
-                <button onClick={() => getCount2(value)} className='btn-single'>30s</button>
-                <button onClick={() => getCount3(value)} className='btn-single'>45s</button>
+                <button onClick={() => getCount(value)} className='btn-single'>10s</button>
+                <button onClick={() => getCount2(value)} className='btn-single'>15s</button>
+                <button onClick={() => getCount3(value)} className='btn-single'>30s</button>
                 <button onClick={() => getCount4(value)} className='btn-single'>55s</button>
             </div>
             <h3 style={{ marginTop: '40px' }}>Learning Details:</h3>
@@ -69,10 +60,10 @@ const Cart = (props) => {
                 <h5 className='break-time'>Break Time: {value}s </h5>
             </div>
 
-            <button onClick={lastBtn} className='last-btn'>Learning Complete</button>
+            <button className='last-btn'>Learning Complete</button>
 
 
-            <ToastContainer></ToastContainer>
+
         </div >
 
     );

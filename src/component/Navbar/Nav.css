@@ -1,13 +1,9 @@
 .navbar {
-    background-color: rgb(237, 75, 132);
+    background-color: rgb(75, 218, 237);
     padding: 2px;
     color: white;
 }
 
 .nav-text {
     margin-left: 5px;
-}
-
-.icon {
-    margin-right: 20px;
 }
